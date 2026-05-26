@@ -2,10 +2,12 @@ import pandas as pd
 import pytest
 
 from src.services import (
-    spending_by_category,
-    spending_by_weekday,
-    spending_by_workday,
-)_transfers, simple_search)
+    cashback_categories,
+    investment_bank,
+    search_by_phone,
+    search_transfers,
+    simple_search,
+)
 
 
 @pytest.fixture
@@ -29,5 +31,4 @@ def transactions_df() -> pd.DataFrame:
             ],
         }
     )
-
 
